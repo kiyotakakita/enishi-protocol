@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enishi-protocol"
+version = "0.2.0"
+description = "Asynchronous Physical Mesh Protocol with Zero-Knowledge Trust & Ephemeral One-Sender Channels"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Enishi Protocol Working Group", email = "mesh@enishi.network" }
+]
+keywords = [
+    "mesh-network",
+    "off-grid",
+    "lora",
+    "zero-knowledge",
+    "web-of-trust",
+    "ephemeral-communication",
+    "p2p",
+    "privacy"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: System :: Networking",
+    "Topic :: Security :: Cryptography",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/enishi-protocol/enishi-protocol"
+Documentation = "https://github.com/enishi-protocol/enishi-protocol#readme"
+Repository = "https://github.com/enishi-protocol/enishi-protocol.git"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

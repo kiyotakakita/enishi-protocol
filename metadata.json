@@ -1,0 +1,6 @@
+{
+  "name": "Enishi Protocol - Off-Grid Asynchronous Mesh",
+  "description": "Asynchronous Physical Mesh Protocol with Zero-Knowledge Trust, Web of Trust (WoT), and Ephemeral One-Sender Channels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
